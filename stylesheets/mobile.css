@@ -302,9 +302,9 @@
   .kuvsh_7 {
     position: absolute;
     left: 17.5vw;
-    top: 250.3vw;
-    width: 37vw;
-    height: 20vw;
+    top: 200.3vw;
+    width: 46vw;
+    height: 25vw;
     background: url("../images/kuvsh_7_1.svg");
   }
   .kuvsh_7_anim {
@@ -748,7 +748,7 @@
   .frog_3 {
     position: absolute;
     left: 24.3vw;
-    top: 130.4vw;
+    top: 196.4vw;
     width: 24.9vw;
     height: 16.8vw;
   }
@@ -1083,7 +1083,7 @@
   .name {
     position: absolute;
     left: 14.4vw;
-    top: 215vw;
+    top: 240vw;
     width: 27vw;
     height: 0vw;
   }
@@ -1143,7 +1143,7 @@
     font-style: normal;
     font-family: Montserrat;
     color: white;
-    top: 167vw;
+    top: 200vw;
     left: 64vw;
     position: absolute;
     animation: group_name .8s linear infinite;
@@ -1154,7 +1154,7 @@
     font-style: normal;
     font-family: Montserrat;
     color: white;
-    top: 167vw;
+    top: 200vw;
     left: 19vw;
     position: absolute;
     animation: group_name .8s linear infinite;
