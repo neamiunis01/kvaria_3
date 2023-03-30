@@ -119,7 +119,7 @@ $(document).ready(function(){
   $(".frog_1").click(function(){
       if ($(".frog_1").hasClass("close1")) {
           $(".frog_1").removeClass("close1");
-          $(".frog_1").addClass("open");
+          $(".frog_1").addClass("open1");
           }
       else if ($(".frog_1").hasClass("open1")) {
               $(".frog_1").removeClass("open1");
@@ -128,7 +128,20 @@ $(document).ready(function(){
   });
 
   $(".frog_1").click(function(){
-      $(this).toggleClass('kva1')
+      if ($(".frog_1").hasClass("open1")) {
+          $(".kva1").removeClass("none");
+          }
+      else if ($(".frog_1").hasClass("close1")) {
+              $(".kva1").addClass("none");
+          }
+  });
+
+  $(".kva1").click(function(){
+      if ($(".frog_1").hasClass("open1")) {
+          $(".kva1").addClass("none");
+          $(".frog_1").removeClass("open1");
+          $(".frog_1").addClass("close1");
+          }
   });
 
   $(".frog_2").click(function(){
@@ -142,6 +155,23 @@ $(document).ready(function(){
           }
   });
 
+  $(".frog_2").click(function(){
+      if ($(".frog_2").hasClass("open2")) {
+          $(".kva2").removeClass("none");
+          }
+      else if ($(".frog_2").hasClass("close2")) {
+              $(".kva2").addClass("none");
+          }
+  });
+
+  $(".kva2").click(function(){
+      if ($(".frog_2").hasClass("open2")) {
+          $(".kva2").addClass("none");
+          $(".frog_2").removeClass("open2");
+          $(".frog_2").addClass("close2");
+          }
+  });
+
   $(".frog_3").click(function(){
       if ($(".frog_3").hasClass("close3")) {
           $(".frog_3").removeClass("close3");
@@ -150,6 +180,23 @@ $(document).ready(function(){
       else if ($(".frog_3").hasClass("open3")) {
               $(".frog_3").removeClass("open3");
               $(".frog_3").addClass("close3");
+          }
+  });
+
+  $(".frog_3").click(function(){
+      if ($(".frog_3").hasClass("open3")) {
+          $(".kva3").removeClass("none");
+          }
+      else if ($(".frog_3").hasClass("close3")) {
+              $(".kva3").addClass("none");
+          }
+  });
+
+  $(".kva3").click(function(){
+      if ($(".frog_3").hasClass("open3")) {
+          $(".kva3").addClass("none");
+          $(".frog_3").removeClass("open3");
+          $(".frog_3").addClass("close3");
           }
   });
 
@@ -206,19 +253,38 @@ $(document).ready(function(){
   });
 
   // насекомые
+  $(".fly_1").click(function(){
+      $(this).toggleClass('stop1')
+  });
+
   // $(".fly_1").click(function(){
-  //     if ($(".fly_1").hasClass("fly_1")) {
-  //         $(".fly_1").removeClass("fly_1");
+  //     if ($(".fly_1").hasClass("play1")) {
+  //         $(".fly_1").removeClass("play1");
   //         $(".fly_1").addClass("stop1");
   //         }
   //     else if ($(".fly_1").hasClass("stop1")) {
   //             $(".fly_1").removeClass("stop1");
-  //             $(".fly_1").addClass("fly_1");
+  //             $(".fly_1").addClass("play1");
   //         }
   // });
-  $(".fly_1").click(function(){
-      $(this).toggleClass('stop1')
-  });
+  //
+  // $(".fly_1").click(function(){
+  //     if ($(".fly_1").hasClass("stop1")) {
+  //         $(".zh1").removeClass("none");
+  //         $(".zh1").addClass("stop1");
+  //         }
+  //     else if ($(".fly_1").hasClass("play1")) {
+  //             $(".zh1").addClass("none");
+  //
+  //         }
+  // });
+  //
+  // $(".zh1").click(function(){
+  //     if ($(".fly_1").hasClass("stop1")) {
+  //         $(".zh1").removeClass("stop1");
+  //         $(".zh1").addClass("none");
+  //         }
+  // });
 
   $(".fly_2").click(function(){
       $(this).toggleClass('stop2')
