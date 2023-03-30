@@ -1080,20 +1080,6 @@
     95% {left: 44vw; top: 110vw; transform: scaleX(1);}
     100% {left: 4.5vw; top: 90.8vw; transform: scaleX(1);}
   }
-  .name {
-    position: absolute;
-    left: 14.4vw;
-    top: 161vw;
-    width: 27vw;
-    height: 0vw;
-  }
-  .group {
-    position: absolute;
-    right: 3.7vw;
-    top: 161vw;
-    width: 27vw;
-    height: 0vw;
-  }
   .container {
     width: 100%;
   }
