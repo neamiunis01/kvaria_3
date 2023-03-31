@@ -52,7 +52,7 @@
     left: 81.4vw;
     top: 38vw;
     width: 20.5vw;
-    height: 21.8vw;
+    height: 21.6vw;
     background: url("../images/stones_2_1.svg");
   }
   .stones_2_anim {
@@ -177,7 +177,7 @@
   }
   .lotos_1 {
     position: absolute;
-    width: 21.7vw;
+    width: 21.6vw;
     height: 12.7vw;
     background: url("../images/lotos_1.svg");
     left: 44vw;
@@ -949,8 +949,8 @@
     position: absolute;
     left: 37.7vw;
     top: 1.6vw;
-    width: 3.6vw;
-    height: 9.3vw;
+    width: 4.8vw;
+    height: 12.4vw;
     background: url("../images/fly_1.png");
   }
   .play1 {

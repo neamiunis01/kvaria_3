@@ -144,6 +144,28 @@ $(document).ready(function(){
           }
   });
 
+  // кваканье
+  $(".frog_1, .frog_2, .frog_3").click(function(){
+        $(this).addClass("play")
+    });
+
+    $(function() {
+        let audio = $('#frog'), tile= $(".frog_1, .frog_2, .frog_3");
+
+        function play()
+        {
+            audio[0].play();
+        }
+        function pause()
+        {
+            audio[0].pause();
+        }
+        tile.on('click',function(){
+            $(this).is('.play') ? play() : pause()
+            $(this).removeClass("play")
+        })
+    })
+
   $(".frog_2").click(function(){
       if ($(".frog_2").hasClass("close2")) {
           $(".frog_2").removeClass("close2");
@@ -256,35 +278,6 @@ $(document).ready(function(){
   $(".fly_1").click(function(){
       $(this).toggleClass('stop1')
   });
-
-  // $(".fly_1").click(function(){
-  //     if ($(".fly_1").hasClass("play1")) {
-  //         $(".fly_1").removeClass("play1");
-  //         $(".fly_1").addClass("stop1");
-  //         }
-  //     else if ($(".fly_1").hasClass("stop1")) {
-  //             $(".fly_1").removeClass("stop1");
-  //             $(".fly_1").addClass("play1");
-  //         }
-  // });
-  //
-  // $(".fly_1").click(function(){
-  //     if ($(".fly_1").hasClass("stop1")) {
-  //         $(".zh1").removeClass("none");
-  //         $(".zh1").addClass("stop1");
-  //         }
-  //     else if ($(".fly_1").hasClass("play1")) {
-  //             $(".zh1").addClass("none");
-  //
-  //         }
-  // });
-  //
-  // $(".zh1").click(function(){
-  //     if ($(".fly_1").hasClass("stop1")) {
-  //         $(".zh1").removeClass("stop1");
-  //         $(".zh1").addClass("none");
-  //         }
-  // });
 
   $(".fly_2").click(function(){
       $(this).toggleClass('stop2')
