@@ -178,7 +178,7 @@
   .lotos_1 {
     position: absolute;
     width: 29.4vw;
-    height: 17.3vw;
+    height: 17.2vw;
     background: url("../images/lotos_1.svg");
     left: 45vw;
     top: 13vw;
@@ -318,7 +318,7 @@
   .lotos_2 {
     position: absolute;
     width: 28.8vw;
-    height: 20.5vw;
+    height: 20.3vw;
     background: url(../images/lotos_2.svg);
     left: 49vw;
     top: 160vw;
@@ -347,7 +347,7 @@
     width: 30vw;
     height: 30vw;
     position: absolute;
-    top: 41vw;
+    top: 50vw;
     left: 60vw;
   }
   .big_1_1 {
@@ -548,7 +548,7 @@
     height: 30vw;
     position: absolute;
     top: 123vw;
-    left: 62vw;
+    left: 58vw;
   }
   .big_2_1 {
     font-size: 3vw;
