@@ -144,28 +144,6 @@ $(document).ready(function(){
           }
   });
 
-  // кваканье
-  $(".frog_1, .frog_2, .frog_3").click(function(){
-        $(this).addClass("play")
-    });
-
-    $(function() {
-        let audio = $('#frog'), tile= $(".frog_1, .frog_2, .frog_3");
-
-        function play()
-        {
-            audio[0].play();
-        }
-        function pause()
-        {
-            audio[0].pause();
-        }
-        tile.on('click',function(){
-            $(this).is('.play') ? play() : pause()
-            $(this).removeClass("play")
-        })
-    })
-
   $(".frog_2").click(function(){
       if ($(".frog_2").hasClass("close2")) {
           $(".frog_2").removeClass("close2");
@@ -221,6 +199,26 @@ $(document).ready(function(){
           $(".frog_3").addClass("close3");
           }
   });
+
+  // кваканье
+  $(".frog_1, .frog_2, .frog_3").click(function(){
+        $(this).addClass("play")
+    });
+
+    $(function() {
+        let audio = $('#frog'), tile= $(".frog_1, .frog_2, .frog_3");
+
+        function play() {
+          audio[0].play();
+        }
+        function pause(){
+          audio[0].pause();
+        }
+        tile.on('click',function(){
+            $(this).is('.play') ? play() : pause()
+            $(this).removeClass("play")
+        })
+    })
 
   // лотосы
   $(".lotos_1").click(function(){
